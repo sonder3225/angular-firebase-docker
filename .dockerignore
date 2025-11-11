@@ -1,0 +1,10 @@
+# Eliminamos 'angular.json' de esta lista
+node_modules
+dist
+.angular/cache
+.vscode
+.git
+.gitignore
+.editorconfig
+npm-debug.log
+yarn-error.log

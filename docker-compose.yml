@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  angular-frontend:
+    build:
+      context: .
+    container_name: angular-firebase-app
+    # Mapeo de puerto: Accede a tu aplicación en http://localhost:8080
+    ports:
+      - '8080:80'
+    restart: always

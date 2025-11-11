@@ -1,0 +1,17 @@
+<div>
+  <h2>Iniciar Sesión</h2>
+
+  <div *ngIf="error" style="color: red; padding: 10px; border: 1px solid red">
+    {{ error }}
+  </div>
+
+  <input type="email" placeholder="Correo Electrónico" [(ngModel)]="emailAddress" name="email" />
+  <br />
+
+  <input type="password" placeholder="Contraseña" [(ngModel)]="password" name="password" />
+  <br />
+
+  <button (click)="onSignInPress()">Iniciar Sesión</button>
+
+  <p>¿No tienes cuenta? <a routerLink="/signup">Regístrate</a></p>
+</div>
