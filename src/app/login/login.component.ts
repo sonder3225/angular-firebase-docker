@@ -6,7 +6,7 @@ import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
-  standalone: true, // 👈 importante para el sistema standalone
+  standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   template: `
     <div style="max-width: 400px; margin: 40px auto; text-align: center;">
@@ -53,7 +53,7 @@ export class LoginComponent {
     if (!success) {
       this.error = 'Credenciales incorrectas o usuario no existe.';
     } else {
-      // 🔹 Redirige al Home después del login exitoso
+      // Redirige al Home
       this.router.navigate(['/']);
     }
   }

@@ -1,4 +1,4 @@
-# Eliminamos 'angular.json' de esta lista
+
 node_modules
 dist
 .angular/cache

@@ -6,7 +6,7 @@ import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
-  standalone: true, // 👈 importante: sin esto, no funcionará en el sistema standalone
+  standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   template: `
     <div style="max-width: 400px; margin: 40px auto; text-align: center;">
